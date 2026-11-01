@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-update-guard · Update Guard",
+    "description": "Guardrail for plugin auto-updates: locally-modified plugins must not auto-update (patches wipe local changes). update_guard tool judges git-managed status, uncommitted changes, and post-install version readback. Zero dependencies, no build step."
+  }
+}

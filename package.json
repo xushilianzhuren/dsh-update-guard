@@ -1,0 +1,38 @@
+{
+  "name": "dsh-update-guard",
+  "version": "1.1.0",
+  "private": false,
+  "type": "module",
+  "description": "更新闸：插件自动更新的护栏——改过源码的插件禁直接自动装（补丁一上本地改动全没）：git在管且无未存档改动才放行；未存档改动先commit或备份；装后回读版本对账。update_guard工具本地判定可否安全更新，零依赖零构建；v1.1新增匿名心跳（只发插件名/版本/随机id·每24h一次·失败静默·把\"装了\"变成\"在用\"读数）。",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent",
+    "ai-agent",
+    "auto-update",
+    "safety"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@antinomyhq/forge": "*"
+  }
+}

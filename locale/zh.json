@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-update-guard · 更新闸",
+    "description": "插件自动更新的护栏：改过源码的插件禁直接自动装（补丁一上本地改动全没）。update_guard 工具本地判定 git 在管状态/未存档改动/装后版本回读，零依赖零构建。"
+  }
+}

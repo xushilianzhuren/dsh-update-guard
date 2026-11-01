@@ -1,0 +1,7 @@
+# dsh-update-guard · cordis.patch.yml
+- insert:
+    - id: dsh-update-guard
+      name: 'dsh-update-guard'
+      config:
+        enabled: true
+        tool: true
